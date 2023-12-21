@@ -1,31 +1,3 @@
-Skip to content
-decjonas
-/
-eis
- 
-Type / to search
- 
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Commit
-Delete README.md
- main
-@decjonas
-decjonas committed now 
-1 parent 25726c4
-commit 9353d74
-Showing 1 changed file with 0 additions and 68 deletions.
-  68 changes: 0 additions & 68 deletions 68  
-README.md
- 
-@@ -1,68 +0,0 @@
 # EIS, extended inline styling
 
 ### What is EIS?
