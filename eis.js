@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
             replacement: "@media (prefers-color-scheme: dark)",
         },
         {
-            pattern: /@\(<(\d+)px\)/g,
+            pattern: /@(\d+)px\-/g,
             replacement: "@media (max-width: $1px)",
         },
         {
-            pattern: /@\(>(\d+)px\)/g,
+            pattern: /@(\d+)px\+/g,
             replacement: "@media (min-width: $1px)",
         },
     ];
