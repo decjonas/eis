@@ -14,22 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
     let elementsWithStyle = document.querySelectorAll("[style]"),
         dynamicStylesheet = document.createElement("style");
 
-    dynamicStylesheet.setAttribute("id", "eis-stylesheet");
+    dynamicStylesheet.setAttribute("eis", "sheet");
     document.head.appendChild(dynamicStylesheet);
 
     elementsWithStyle.forEach((element) => {
-        let randomString = generateRandomString(7);
+        let randomString = generateRandomString(3);
 
-        while (document.querySelector(`[data-eis="${randomString}"]`)) {
-            randomString = generateRandomString(8);
+        while (document.querySelector(`[eis="${randomString}"]`)) {
+            randomString = generateRandomString(3);
         }
 
-        element.setAttribute("data-eis", randomString);
+        element.setAttribute("eis", randomString);
 
         let currentStyles = dynamicStylesheet.innerText;
         dynamicStylesheet.textContent =
             currentStyles +
-            `[data-eis="${randomString}"]{${element.getAttribute("style")}}`;
+            `[eis="${randomString}"]{${element.getAttribute("style")}}`;
 
         element.removeAttribute("style");
     });
